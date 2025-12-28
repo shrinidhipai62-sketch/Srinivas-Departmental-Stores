@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Grocery Store</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+    header { background: #2e7d32; color: white; padding: 15px; text-align: center; }
+    nav { background: #388e3c; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; margin: 20px; background: white; border-radius: 8px; }
+    h2 { color: #2e7d32; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .product { border: 1px solid #ddd; padding: 10px; border-radius: 6px; text-align: center; }
+    footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
+    .edit-btn { position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background: #ff9800; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header contenteditable="true">
+  <h1>Fresh Mart Grocery Store</h1>
+  <p>Your daily needs, fresh & affordable</p>
+</header>
+
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" contenteditable="true">
+  <h2>About Us</h2>
+  <p>We are a local grocery store providing fresh vegetables, fruits, dairy, and daily essentials at the best prices.</p>
+</section>
+
+<section id="products">
+  <h2 contenteditable="true">Our Products</h2>
+  <div class="products">
+    <div class="product" contenteditable="true">
+      <h3>Fresh Vegetables</h3>
+      <p>Potato, Onion, Tomato, Greens</p>
+    </div>
+    <div class="product" contenteditable="true">
+      <h3>Fruits</h3>
+      <p>Apple, Banana, Mango, Orange</p>
+    </div>
+    <div class="product" contenteditable="true">
+      <h3>Dairy Products</h3>
+      <p>Milk, Curd, Butter, Paneer</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" contenteditable="true">
+  <h2>Contact Us</h2>
+  <p>Address: Your Shop Address Here</p>
+  <p>Phone: +91-XXXXXXXXXX</p>
+</section>
+
+<footer contenteditable="true">
+  <p>© 2025 Fresh Mart Grocery Store</p>
+</footer>
+
+<button class="edit-btn" onclick="alert('You can directly click on text and edit it. Save by copying the file.')">Edit Mode</button>
+
+</body>
+</html>
